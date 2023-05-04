@@ -10,7 +10,7 @@ export default function Home() {
     <Layout>
       <Container>
         <Heading as="h1">Hello World</Heading>
-        <Button>Button</Button>
+        <Button>gonaturalgas.com.au </Button>
 
       </Container>
     </Layout>
