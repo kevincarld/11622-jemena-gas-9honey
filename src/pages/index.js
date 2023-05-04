@@ -20,7 +20,7 @@ export default function Home() {
       <Intro />
       <MakeGood />
       <Sink />
-      {/* <Banner /> */}
+      <Banner />
       {/* <Tabs /> */}
       {/* <Footer /> */}
     </Layout>

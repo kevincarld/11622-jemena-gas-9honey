@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Text, Button, Link, Image, Grid, GridItem } from '@chakra-ui/react'
+import { Box, Text, Button, Link, Image, Grid, GridItem, AspectRatio } from '@chakra-ui/react'
 import PreLine from 'components/util/PreLine'
 import NineLink from 'components/util/NineLink'
 import { mock } from 'utils/common'
@@ -11,9 +11,9 @@ import { motion } from 'framer-motion'
 export default function Banner() {
 
   return (
-    <Box>
-      <h1>I am Banner</h1>
-    </Box>
+    <Figure>
+      <Img dimension='375x600' w='full' alt='living room' mock='banner-1' />
+    </Figure>
   )
 }
 
