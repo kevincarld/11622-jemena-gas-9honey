@@ -16,13 +16,13 @@ import Footer from "components/Footer"
 export default function Home() {
   return (
     <Layout>
-      <Hero />
+      {/* <Hero /> */}
       <Intro />
-      <MakeGood />
-      <Sink />
-      <Banner />
-      <Tabs />
-      <Footer />
+      {/* <MakeGood /> */}
+      {/* <Sink /> */}
+      {/* <Banner /> */}
+      {/* <Tabs /> */}
+      {/* <Footer /> */}
     </Layout>
   )
 }

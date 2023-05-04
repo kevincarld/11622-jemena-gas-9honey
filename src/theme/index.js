@@ -6,7 +6,12 @@ const customTheme = extendTheme({
     Button
   },
   textStyles: {
-
+    body: {
+      fontWeight: 'normal',
+      fontSize: {base: '14px', d:'17px'},
+      lineHeight: {base: '25px', d:'30px'},
+      letterSpacing: {base: '0.14px'},
+    }
   },
   breakpoints : {
     sm: '360px',
