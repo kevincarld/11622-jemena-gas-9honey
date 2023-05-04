@@ -19,7 +19,7 @@ export default function Home() {
       {/* <Hero /> */}
       <Intro />
       <MakeGood />
-      {/* <Sink /> */}
+      <Sink />
       {/* <Banner /> */}
       {/* <Tabs /> */}
       {/* <Footer /> */}
