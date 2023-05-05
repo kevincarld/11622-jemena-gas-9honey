@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 export default function MakeGood() {
 
   return (
-    <Box>
+    <Box pos='relative'>
       <Figure>
         <Img display={{base: 'block', d: 'none'}} dimension='375x336' w='full' mock='makegood-1' />
         <Img display={{base: 'none', d: 'block'}} minH={{d: '740px'}} dimension='1920x861' w='full' fit='cover' mock='makegood-2' />
