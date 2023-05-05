@@ -17,11 +17,3 @@ export default function Banner() {
     </Figure>
   )
 }
-
-// font styles
-const texts = {
-  xx: {
-
-  }
-}
-

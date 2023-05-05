@@ -20,8 +20,8 @@ export default function Home() {
       {/* <Intro /> */}
       {/* <MakeGood /> */}
       {/* <Sink /> */}
-      <Banner />
-      {/* <Tabs /> */}
+      {/* <Banner /> */}
+      <Tabs />
       {/* <Footer /> */}
     </Layout>
   )

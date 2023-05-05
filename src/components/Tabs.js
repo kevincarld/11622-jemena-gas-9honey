@@ -12,12 +12,12 @@ export default function Tabs() {
 
   return (
     <Box bg='sky' color='white'>
-      <Box p={{base: '50px 30px 45px'}}>
+      <Box p={{base: '50px 30px 45px'}} textAlign={{md: 'center'}}>
         <Text textStyle='sectionTitle'>A natural choice</Text>
         <Text {...texts.subtitle}>Here are just some of the reasons to choose natural gas. Hover over each tile for more details.</Text>
       </Box>
 
-      <Grid sx={styles.cards} gap={{base: '13px'}}>
+      <Grid sx={styles.cards} templateColumns={{md: 'repeat(2, 375px)', d: 'repeat(3, 400px)'}} gap={{base: '13px'}}>
         <Box className='card card__1'>
           <Box className='icon' as='svg' width="100.363" height="99.546" viewBox="0 0 100.363 99.546">
             <defs>
@@ -54,7 +54,7 @@ export default function Tabs() {
           </Box>
 
           <PreLine className='title'>
-            {`Invested in 
+            {`Invested in
             the future`}
           </PreLine>
 
@@ -76,7 +76,7 @@ export default function Tabs() {
           </Box>
 
           <PreLine className='title'>
-            {`Take control of 
+            {`Take control of
             your home`}
           </PreLine>
 
@@ -111,7 +111,7 @@ export default function Tabs() {
           </Box>
 
           <PreLine className='title'>
-            {`Cheaper to run 
+            {`Cheaper to run
             the more you use `}
           </PreLine>
 
@@ -157,7 +157,7 @@ export default function Tabs() {
 
 
           <PreLine className='title'>
-            {`It can earn you 
+            {`It can earn you
             cashback`}
           </PreLine>
 
@@ -172,16 +172,20 @@ export default function Tabs() {
 
 const styles = {
   cards: {
+    justifyContent: 'center',
+
     '.card': {
       bg: 'white',
       p: {base: '40px 30px 80px',},
+      w: 'full',
+      maxW: {base: '375px', d: '400px'},
 
       '.title': {
         color: 'blue',
         fontWeight: 'medium',
         mt: '20px',
-        fontSize: {base: '28px', sm: '34px'},
-        lineHeight: {base: '33px', sm: '39px'},
+        fontSize: {base: '28px', sm: '34px', d:'36px'},
+        lineHeight: {base: '33px', sm: '39px', d:'40px'},
       },
 
       '.content': {
