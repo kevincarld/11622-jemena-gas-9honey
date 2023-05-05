@@ -22,7 +22,7 @@ export default function Home() {
       <Sink />
       <Banner />
       <Tabs />
-      {/* <Footer /> */}
+      <Footer />
     </Layout>
   )
 }
