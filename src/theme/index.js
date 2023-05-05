@@ -14,8 +14,8 @@ const customTheme = extendTheme({
     },
     sectionTitle: {
       fontWeight: 'bold',
-      fontSize: {base: '36px'},
-      lineHeight: {base: '46px'},
+      fontSize: {base: '36px', d:'61px', wide:"71px"},
+      lineHeight: {base: '46px', d: '68px',  wide: '78px'},
     }
   },
   breakpoints : {

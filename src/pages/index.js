@@ -17,12 +17,12 @@ export default function Home() {
   return (
     <Layout>
       {/* <Hero /> */}
-      <Intro />
-      {/* <MakeGood />
-      <Sink />
-      <Banner />
-      <Tabs />
-      <Footer /> */}
+      {/* <Intro /> */}
+      <MakeGood />
+      {/* <Sink /> */}
+      {/* <Banner /> */}
+      {/* <Tabs /> */}
+      {/* <Footer /> */}
     </Layout>
   )
 }
