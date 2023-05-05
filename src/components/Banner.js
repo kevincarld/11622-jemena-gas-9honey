@@ -12,7 +12,8 @@ export default function Banner() {
 
   return (
     <Figure>
-      <Img dimension='375x600' w='full' alt='living room' mock='banner-1' />
+      <Img display={{base: 'block', lg: 'none'}} dimension='375x600' w='full' alt='living room' mock='banner-1' />
+      <Img display={{base: 'none', lg: 'block'}} dimension='1920x838' w='full' alt='living room' mock='banner-1' />
     </Figure>
   )
 }

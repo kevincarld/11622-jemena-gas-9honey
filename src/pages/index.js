@@ -19,8 +19,8 @@ export default function Home() {
       {/* <Hero /> */}
       {/* <Intro /> */}
       {/* <MakeGood /> */}
-      <Sink />
-      {/* <Banner /> */}
+      {/* <Sink /> */}
+      <Banner />
       {/* <Tabs /> */}
       {/* <Footer /> */}
     </Layout>
