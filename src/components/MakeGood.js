@@ -23,7 +23,7 @@ export default function MakeGood() {
         pt={{base: '39px' }}
         pb={{base: '44px'}}
       >
-        <PreLine as='h2' {...texts.title}>
+        <PreLine as='h2' textStyle='sectionTitle'>
           {`Make a good
           space great`}
         </PreLine>
@@ -41,14 +41,5 @@ export default function MakeGood() {
       </Box>
     </Box>
   )
-}
-
-// font styles
-const texts = {
-  title: {
-    fontWeight: 'bold',
-    fontSize: {base: '36px'},
-    lineHeight: {base: '46px'},
-  }
 }
 

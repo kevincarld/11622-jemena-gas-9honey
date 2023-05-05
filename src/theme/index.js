@@ -11,6 +11,11 @@ const customTheme = extendTheme({
       fontSize: {base: '14px', d:'17px'},
       lineHeight: {base: '25px', d:'30px'},
       letterSpacing: {base: '0.14px'},
+    },
+    sectionTitle: {
+      fontWeight: 'bold',
+      fontSize: {base: '36px'},
+      lineHeight: {base: '46px'},
     }
   },
   breakpoints : {
