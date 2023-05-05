@@ -12,10 +12,11 @@ export default function Footer() {
 
   return (
     <Box pos='relative' color='white'>
-      <Img dimension='375x618' mock='footer' alt='lady in the pool' />
+      <Img display={{base: 'block', md: 'none'}} dimension='375x618' mock='footer' w='full' alt='lady in the pool' />
+      <Img display={{base: 'none', md: 'block'}} minH='600px' dimension='1920x800' mock='footer' w='full' fit='cover' alt='lady in the pool' />
 
       <Box pos='absolute' inset='40% 0 auto 0' textAlign={'center'} px={{base: '20px'}}>
-        <PreLine {...texts.title}>
+        <PreLine textStyle='sectionTitle'>
           {`Give your home
           good energy`}
         </PreLine>
@@ -27,13 +28,3 @@ export default function Footer() {
     </Box>
   )
 }
-
-// font styles
-const texts = {
-  title: {
-    fontWeight: 'bold',
-    fontSize: {base: '41px'},
-    lineHeight: {base: '45px'},
-  }
-}
-

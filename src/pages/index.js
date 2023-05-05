@@ -21,8 +21,8 @@ export default function Home() {
       {/* <MakeGood /> */}
       {/* <Sink /> */}
       {/* <Banner /> */}
-      <Tabs />
-      {/* <Footer /> */}
+      {/* <Tabs /> */}
+      <Footer />
     </Layout>
   )
 }

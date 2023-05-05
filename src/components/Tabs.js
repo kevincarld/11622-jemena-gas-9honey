@@ -190,9 +190,9 @@ const styles = {
 
       '.content': {
         color: 'black',
-        fontSize: {base: '12px', sm: '15px'},
+        fontSize: {base: '12px', sm: '15px', d: '17px'},
         letterSpacing: '0.5px',
-        lineHeight: {base: '20px', sm: '25px'},
+        lineHeight: {base: '20px', sm: '25px', d:'30px'},
       }
     }
   }
