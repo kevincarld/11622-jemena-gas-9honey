@@ -1,9 +1,6 @@
 
 import Layout from "components/util/Layout"
-// chakra
-import { Heading, Button } from "@chakra-ui/react"
 //
-import Container from "components/util/Container"
 import Hero from "components/Hero"
 import Intro from "components/Intro"
 import MakeGood from "components/MakeGood"

@@ -11,7 +11,7 @@ import { motion } from 'framer-motion'
 export default function Intro() {
 
   return (
-    <Container p={{base: '49px 0 53px'}}  maxW='1070px' mx='auto'>
+    <Container p={{base: '49px 0 53px', d: '109px 0 96px'}}  maxW='1070px' mx='auto'>
       <Box px={{base: '30px', d: 0}}>
         <Text as='h2' {...texts.heading} mb={{base: '30px'}}>Home is where the heart is, sure. But when we think about the beating heart of a home, we often overlook the elements that make it operate at its dreamiest. </Text>
 
