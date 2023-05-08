@@ -20,29 +20,31 @@ export default function Hero() {
       <Box h={{base: '630px', sm: 'auto'}} display={{base: 'block', lg: 'none'}}>
         <Img dimension='375x627' mock='bg' src='./images/hero-sm.jpg' h='full' w='full' fit='cover' />
         <Box pos='absolute' bottom='0' left='0' right='0' display='flex' flexDir={'column'} alignItems={'center'}>
-          <PreLine as='h1'  px='30px' pb='60px' sx={{
-            fontWeight: 'bold',
-            fontSize: '40px',
-            lineHeight: '46px',
-            '@media(min-width: 375px)': {
-              fontSize: '51px',
-              lineHeight: '56px',
-            },
-            '@media(min-width: 400px)': {
-              pb: '30%'
-            },
-            '@media(min-width: 515px)': {
-              pb: '50%'
-            },
-            '@media(min-width: 768px)': {
-              pb: '70%'
-            },
-          }}>
-            {`Make
-              your dream
-              home even
-              dreamier`}
-          </PreLine>
+          <Parallax translateY={[0, 100]} shouldAlwaysCompleteAnimation='true' >
+            <PreLine as='h1'  px='30px' pb='60px' sx={{
+              fontWeight: 'bold',
+              fontSize: '40px',
+              lineHeight: '46px',
+              '@media(min-width: 375px)': {
+                fontSize: '51px',
+                lineHeight: '56px',
+              },
+              '@media(min-width: 400px)': {
+                pb: '30%'
+              },
+              '@media(min-width: 515px)': {
+                pb: '50%'
+              },
+              '@media(min-width: 768px)': {
+                pb: '70%'
+              },
+            }}>
+              {`Make
+                your dream
+                home even
+                dreamier`}
+            </PreLine>
+          </Parallax>
 
           <Img dimension='375x209' mock='front' src='./images/hero-obj-sm.png' fit='contain' zIndex='2' pos='relative' />
         </Box>
@@ -53,11 +55,13 @@ export default function Hero() {
 
         <Box pos='absolute' inset='0 0 0 0' display='flex' alignItems='center'>
           <Container w='full'>
-            <PreLine as='h1' {...texts.title} w='full' px={{base: '30px', d: '80px'}} pb={{base:'60px', d: '100px', wide: '150px'}}>
-              {`Make your
-              dream homes
-              even dreamier`}
-            </PreLine>
+            <Mover y={[0, 100]} shouldAlwaysCompleteAnimation='true' >
+              <PreLine as='h1' {...texts.title} w='full' px={{base: '30px', d: '80px'}} pb={{base:'60px', d: '100px', wide: '150px'}}>
+                {`Make your
+                dream homes
+                even dreamier`}
+              </PreLine>
+            </Mover>
           </Container>
         </Box>
 
