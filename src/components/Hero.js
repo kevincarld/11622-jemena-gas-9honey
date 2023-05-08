@@ -54,14 +54,20 @@ export default function Hero() {
         <Img dimension='1920x856' mock='bg' src='./images/hero.jpg' minH={{base: '700px'}}  w='full' h='full' fit='cover' />
 
         <Box pos='absolute' inset='0 0 0 0' display='flex' alignItems='center'>
-          <Container w='full'>
-            <Mover y={[0, 100]} shouldAlwaysCompleteAnimation='true' >
+          <Container w='full'
+            sx={{
+              '>div': {
+                transition: {d: 'transform 600ms cubic-bezier(0.39, 0.575, 0.55, 0.905) 0s' }
+              }
+            }}
+          >
+            <Parallax translateY={[0, 100]} shouldAlwaysCompleteAnimation='true'>
               <PreLine as='h1' {...texts.title} w='full' px={{base: '30px', d: '80px'}} pb={{base:'60px', d: '100px', wide: '150px'}}>
                 {`Make your
                 dream homes
                 even dreamier`}
               </PreLine>
-            </Mover>
+            </Parallax>
           </Container>
         </Box>
 
