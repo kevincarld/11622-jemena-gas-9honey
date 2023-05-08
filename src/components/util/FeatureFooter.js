@@ -10,9 +10,9 @@ export default function FeatureFooter({svg, href, ...rest}) {
       {...rest}
     >
       <Text sx={{
-        fontSize: {base: '9px'},
+        fontSize: {base: '9px', d: '12px'},
         fontFamily: 'Arial',
-        mb: '0px!important',
+        mb: '-5px!important',
         color:'white',
       }}>
         ADVERTISING FEATURE
