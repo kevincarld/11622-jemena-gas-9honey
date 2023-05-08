@@ -22,7 +22,7 @@ export default function Intro() {
 
       </Box>
 
-      <Figure my={{base: '41px'}}>
+      <Figure as={motion.figure} initial={{opacity: 0}} whileInView={{opacity:1, transition: {duration :1.2}}} my={{base: '41px'}}>
         <Img dimension='1074x511' mock='intro-1' src='./images/intro-1.jpg' alt='fireplace' />
       </Figure>
 

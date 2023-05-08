@@ -17,7 +17,7 @@ export default function Hero() {
     <Box pos='relative' overflow='hidden' color='white'>
       <FeatureHeader href='#' />
 
-      <Box h={{base: '630px', sm: 'auto'}} display={{base: 'block', lg: 'none'}}>
+      <Box h={{base: '630px', sm: 'auto'}} display={{base: 'block', md: 'none'}}>
         <Img dimension='375x627' mock='bg' src='./images/hero-sm.jpg' h='full' w='full' fit='cover' />
         <Box pos='absolute' bottom='0' left='0' right='0' display='flex' flexDir={'column'} alignItems={'center'}>
           <Parallax translateY={[0, 100]} shouldAlwaysCompleteAnimation='true' >
@@ -50,7 +50,7 @@ export default function Hero() {
         </Box>
       </Box>
 
-      <Box display={{base: 'none', lg: 'block'}}>
+      <Box display={{base: 'none', md: 'block'}}>
         <Img dimension='1920x856' mock='bg' src='./images/hero.jpg' minH={{base: '700px'}}  w='full' h='full' fit='cover' />
 
         <Box pos='absolute' inset='0 0 0 0' display='flex' alignItems='center'>
