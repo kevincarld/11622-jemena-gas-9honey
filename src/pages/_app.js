@@ -193,7 +193,9 @@ export default function App({ Component, pageProps }) {
       }
     */}
 
-      <Component {...pageProps} />
+      <MastheadProvider>
+        <Component {...pageProps} />
+      </MastheadProvider>
 
       {/* UNCOMMENT FOR: GA4 scripts
       {!isDev &&

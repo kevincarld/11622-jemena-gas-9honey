@@ -31,7 +31,7 @@ const nextConfig = {
     },
     jobCode: '11622-jemena-gas', // used for nine ga scripts
     guidelines: false, // shows or hides layout guideline bars
-    activateMasthead: false, // shows or hides masthead
+    activateMasthead: true, // shows or hides masthead
     mastheadOverride: 'honey', // overrides masthead that's pulling from hostname: e.g honey,style,travel,kitchen,you,parenting,coach,pets,celebrity
   }
 }

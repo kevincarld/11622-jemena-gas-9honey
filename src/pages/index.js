@@ -14,7 +14,7 @@ import { Box } from "@chakra-ui/react"
 export default function Home() {
   return (
     <Layout>
-      <Box pos='relative' overflow='hidden'>
+      <Box pos='relative' overflow='hidden' pt='50px'>
         <Hero />
         <Intro />
         <MakeGood />
