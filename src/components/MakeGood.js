@@ -7,9 +7,9 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
-import { useResponsive } from 'utils/common'
+
 export default function MakeGood() {
-  const isDesktop = useResponsive('up', 'd')
+
   return (
     <Box pos='relative'>
       <Figure>
@@ -20,8 +20,9 @@ export default function MakeGood() {
       <Container pos={{d: 'absolute'}} inset='0 0 0 0' zIndex='2' >
         <Box
           as={motion.div}
-          initial={isDesktop ? {opacity: 0, x: 50} : {}}
-          whileInView={isDesktop ? {opacity: 1, x: 0, transition: {duration: 1.2}} : {}}
+          initial={{opacity: 0, x: 80}}
+          whileInView={{opacity: 1, x: 0, transition: {duration: 1.2}}}
+          viewport={{ margin: '0px 0px -150px 0px'}}
           bg='blue'
           color='white'
           px={{base: '35px', d: '70px' }}

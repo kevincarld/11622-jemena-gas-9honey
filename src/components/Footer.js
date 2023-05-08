@@ -8,23 +8,24 @@ import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
 import FeatureFooter from './util/FeatureFooter'
+import { animation_zoom } from 'utils/motion'
 export default function Footer() {
 
   return (
-    <Box pos='relative' color='white'>
-      <Img display={{base: 'block', md: 'none'}} dimension='375x618' src='./images/footer-sm.jpg' mock='footer' w='full' alt='lady in the pool' />
-      <Img display={{base: 'none', md: 'block'}} minH='600px' dimension='1920x800' src='./images/footer.jpg' mock='footer' w='full' fit='cover' alt='lady in the pool' />
+    <Box pos='relative' color='white' overflow='hidden'>
+      <Img viewport={{once: true}} as={motion.img} variants={animation_zoom} initial='hide' whileInView='zoom' display={{base: 'block', md: 'none'}} dimension='375x618' src='./images/footer-sm.jpg' mock='footer' w='full' alt='lady in the pool' />
+      <Img viewport={{once: true, margin: '0px 0px -150px 0px'}} as={motion.img} variants={animation_zoom} initial='hide' whileInView='zoom' display={{base: 'none', md: 'block'}} minH='600px' dimension='1920x800' src='./images/footer.jpg' mock='footer' w='full' fit='cover' alt='lady in the pool' />
 
-      <Box pos='absolute' inset={{base: '30% 0 auto 0', sm: '40% 0 auto 0'}} textAlign={'center'} px={{base: '20px'}}>
+      <Box as={motion.div} initial={{opacity: 0, y: 50}} whileInView={{opacity: 1, y: 0, transition: {duration: 1.2}}} viewport={{once: true, margin: '0px 0px -150px 0px'}} pos='absolute' inset={{base: '30% 0 auto 0', sm: '40% 0 auto 0'}} textAlign={'center'} px={{base: '20px'}}>
         <PreLine textStyle='sectionTitle'>
           {`Give your home
           good energy`}
         </PreLine>
 
-        <Button>gonaturalgas.com.au</Button>
+        <Button as={NineLink} href='https://www.gonaturalgas.com.au/'>gonaturalgas.com.au</Button>
       </Box>
 
-      <FeatureFooter href='#' />
+      <FeatureFooter href='https://www.gonaturalgas.com.au/' />
     </Box>
   )
 }

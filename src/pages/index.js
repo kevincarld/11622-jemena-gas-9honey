@@ -9,17 +9,20 @@ import Banner from "components/Banner"
 import Tabs from "components/Tabs"
 import Footer from "components/Footer"
 
+import { Box } from "@chakra-ui/react"
 
 export default function Home() {
   return (
     <Layout>
-      <Hero />
-      <Intro />
-      <MakeGood />
-      <Sink />
-      <Banner />
-      <Tabs />
-      <Footer />
+      <Box pos='relative' overflow='hidden'>
+        <Hero />
+        <Intro />
+        <MakeGood />
+        <Sink />
+        <Banner />
+        <Tabs />
+        <Footer />
+      </Box>
     </Layout>
   )
 }

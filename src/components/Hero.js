@@ -15,7 +15,7 @@ export default function Hero() {
 
   return (
     <Box pos='relative' overflow='hidden' color='white'>
-      <FeatureHeader href='#' />
+      <FeatureHeader href='https://www.gonaturalgas.com.au/' />
 
       <Box h={{base: '630px', sm: 'auto'}} display={{base: 'block', md: 'none'}}>
         <Img dimension='375x627' mock='bg' src='./images/hero-sm.jpg' h='full' w='full' fit='cover' />

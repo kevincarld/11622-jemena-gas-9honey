@@ -7,6 +7,7 @@ import Container from 'components/util/Container'
 import Img from 'components/util/Img'
 import Figure from 'components/util/Figure'
 import { motion } from 'framer-motion'
+import { animation_clipper, animation_zoom } from 'utils/motion'
 
 export default function Sink() {
 
@@ -16,11 +17,11 @@ export default function Sink() {
         <Grid templateColumns={{d: '1fr 1fr'}} gap={{d: '22px'}}>
           <GridItem>
             <Grid templateColumns={{base:"1fr 1fr", d: '1fr'}} gap={{base: '9px'}}>
-              <Figure>
+              <Figure as={motion.figure} variants={animation_clipper} initial='fromLeft' whileInView='toRight'>
                 <Img display={{d: 'none'}} dimension='183x190' w='full' src='./images/sink-1-sm.jpg' mock='sink-1' />
                 <Img display={{base: 'none', d: 'block'}} dimension='522x385' w='full' src='./images/sink-1.jpg' mock='sink-1' />
               </Figure>
-              <Figure display={{d: 'none'}}>
+              <Figure as={motion.figure} variants={animation_clipper} initial='fromRight' whileInView='toLeft' display={{d: 'none'}}>
                 <Img dimension='183x190' w='full' src='./images/sink-2-sm.jpg' mock='sink-2' />
               </Figure>
             </Grid>
@@ -40,13 +41,15 @@ export default function Sink() {
           </GridItem>
 
           <GridItem display={{base: 'none', d:'block'}}>
-            <Img dimension='576x941' mock='sink' fit='cover' src='./images/sink-2.jpg' w='full' h='full' />
+            <Figure as={motion.figure} variants={animation_clipper} initial='fromRight' whileInView='toLeft'>
+              <Img dimension='576x941' mock='sink' fit='cover' src='./images/sink-2.jpg' w='full' h='full' />
+            </Figure>
           </GridItem>
         </Grid>
       </Container>
 
-      <Figure px={{base: '35px', d: 0}}>
-        <Img dimension='1195x706' mock='sink-feet' src='./images/sink-3.jpg' w='full' alt='feet crossed with fireplace in the background' />
+      <Figure overflow='hidden' px={{base: '35px', d: 0}}>
+        <Img as={motion.img} variants={animation_zoom} initial='hide' whileInView='zoom' dimension='1195x706' mock='sink-feet' src='./images/sink-3.jpg' w='full' alt='feet crossed with fireplace in the background' />
       </Figure>
     </Container>
   )
