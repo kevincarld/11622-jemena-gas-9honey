@@ -11,8 +11,8 @@ import { motion } from 'framer-motion'
 export default function Tabs() {
 
   return (
-    <Box bg='sky' color='white'>
-      <Box p={{base: '50px 30px 45px'}} textAlign={{md: 'center'}}>
+    <Box bg='sky' color='white' pb={{base: '40px', lg: '80px', d:'114px'}}>
+      <Box p={{base: '50px 30px 45px', lg: '80px 30px 45px'}} textAlign={{md: 'center'}}>
         <Text textStyle='sectionTitle'>A natural choice</Text>
         <Text {...texts.subtitle}>Here are just some of the reasons to choose natural gas. Hover over each tile for more details.</Text>
       </Box>
@@ -201,8 +201,8 @@ const styles = {
 // font styles
 const texts = {
   subtitle: {
-    fontSize: {base: '14px'},
-    lineHeight: {base: '25px'},
+    fontSize: {base: '14px', d:"26px"},
+    lineHeight: {base: '25px', d: '30px'},
     letterSpacing: '0.4px'
   }
 }
