@@ -13,8 +13,8 @@ export default function MakeGood() {
   return (
     <Box pos='relative'>
       <Figure>
-        <Img display={{base: 'block', d: 'none'}} dimension='375x336' w='full' mock='makegood-1' />
-        <Img display={{base: 'none', d: 'block'}} minH={{d: '740px'}} dimension='1920x861' w='full' fit='cover' mock='makegood-2' />
+        <Img display={{base: 'block', d: 'none'}} dimension='375x336' w='full' src='./images/makegood-sm.jpg' mock='makegood-1' />
+        <Img display={{base: 'none', d: 'block'}} minH={{d: '740px'}} dimension='1920x861' src='./images/makegood.jpg' w='full' fit='cover' mock='makegood-2' />
       </Figure>
 
       <Container pos={{d: 'absolute'}} inset='0 0 0 0' zIndex='2' >
