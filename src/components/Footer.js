@@ -12,10 +12,10 @@ export default function Footer() {
 
   return (
     <Box pos='relative' color='white'>
-      <Img display={{base: 'block', md: 'none'}} dimension='375x618' mock='footer' w='full' alt='lady in the pool' />
-      <Img display={{base: 'none', md: 'block'}} minH='600px' dimension='1920x800' mock='footer' w='full' fit='cover' alt='lady in the pool' />
+      <Img display={{base: 'block', md: 'none'}} dimension='375x618' src='./images/footer-sm.jpg' mock='footer' w='full' alt='lady in the pool' />
+      <Img display={{base: 'none', md: 'block'}} minH='600px' dimension='1920x800' src='./images/footer.jpg' mock='footer' w='full' fit='cover' alt='lady in the pool' />
 
-      <Box pos='absolute' inset='40% 0 auto 0' textAlign={'center'} px={{base: '20px'}}>
+      <Box pos='absolute' inset={{base: '30% 0 auto 0', sm: '40% 0 auto 0'}} textAlign={'center'} px={{base: '20px'}}>
         <PreLine textStyle='sectionTitle'>
           {`Give your home
           good energy`}

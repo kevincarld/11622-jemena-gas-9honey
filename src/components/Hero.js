@@ -20,7 +20,14 @@ export default function Hero() {
       <Box h={{base: '630px', sm: 'auto'}} display={{base: 'block', lg: 'none'}}>
         <Img dimension='375x627' mock='bg' src='./images/hero-sm.jpg' h='full' w='full' fit='cover' />
         <Box pos='absolute' bottom='0' left='0' right='0' display='flex' flexDir={'column'} alignItems={'center'}>
-          <PreLine as='h1' {...texts.title} px='30px' pb='60px' sx={{
+          <PreLine as='h1'  px='30px' pb='60px' sx={{
+            fontWeight: 'bold',
+            fontSize: '40px',
+            lineHeight: '46px',
+            '@media(min-width: 375px)': {
+              fontSize: '51px',
+              lineHeight: '56px',
+            },
             '@media(min-width: 400px)': {
               pb: '30%'
             },
