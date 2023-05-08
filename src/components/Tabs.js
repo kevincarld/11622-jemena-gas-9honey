@@ -51,7 +51,7 @@ export default function Tabs() {
       </Box>
 
       <Grid sx={styles.cards} templateColumns={{md: 'repeat(2, 375px)', d: 'repeat(3, 400px)'}} gap={{base: '13px'}}>
-        <Box as={motion.div} variants={cardVariants} initial='initial' whileHover='hovered' className='card card__1'>
+        <Box as={!isDesktop ? Box :motion.div} variants={cardVariants}initial='initial' whileHover='hovered' className='card card__1'>
           <Box pb={{base: '15px'}} as={motion.div} variants={titleVariants}>
             <Box className='icon' as='svg' width="100.363" height="99.546" viewBox="0 0 100.363 99.546">
               <defs>
@@ -76,7 +76,7 @@ export default function Tabs() {
           <Text as={motion.p} variants={contentVariants} className='content'>Compared to other energy solutions such as coal, natural gas produces less than half the carbon dioxide emissions. </Text>
         </Box>
 
-        <Box as={motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__2'>
+        <Box as={!isDesktop ? Box :motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__2'>
           <Box pb={{base: '15px'}} as={motion.div} variants={titleVariants}>
             <Box className='icon' as='svg' width="83.664" height="83.664" viewBox="0 0 83.664 83.664">
               <defs>
@@ -98,7 +98,7 @@ export default function Tabs() {
           <Text as={motion.p} variants={contentVariants} className='content'>Millions have been invested in research and development in renewable gas to help fuel Australia sustainably into the future.</Text>
         </Box>
 
-        <Box as={motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__3'>
+        <Box as={!isDesktop ? Box :motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__3'>
           <Box pb={{base: '15px'}} as={motion.div} variants={titleVariants}>
             <Box className='icon' as='svg' width="98.453" height="96.546" viewBox="0 0 98.453 96.546">
               <defs>
@@ -122,7 +122,7 @@ export default function Tabs() {
           <Text as={motion.p} variants={contentVariants} className='content'>Cooking or heating with natural gas offers instant and fast control of your stove, barbecue or heating all year round.</Text>
         </Box>
 
-        <Box as={motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__4'>
+        <Box as={!isDesktop ? Box :motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__4'>
          <Box pb={{base: '15px'}} as={motion.div} variants={titleVariants}>
             <Box className='icon' as='svg' width="99.651" height="99.642" viewBox="0 0 99.651 99.642">
               <defs>
@@ -159,7 +159,7 @@ export default function Tabs() {
           <Text as={motion.p} variants={contentVariants} className='content'>The more gas appliances you install, the more cost-efficient using gas becomes.</Text>
         </Box>
 
-        <Box as={motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__5'>
+        <Box as={!isDesktop ? Box :motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__5'>
           <Box pb={{base: '15px'}} as={motion.div} variants={titleVariants}>
             <Box className='icon' as='svg' width="108.324" height="108.361" viewBox="0 0 108.324 108.361">
               <defs>
@@ -183,7 +183,7 @@ export default function Tabs() {
         </Box>
 
 
-        <Box as={motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__6'>
+        <Box as={!isDesktop ? Box :motion.div} variants={cardVariants} initial='initial' whileHover='hovered'  className='card card__6'>
           <Box pb={{base: '15px'}} as={motion.div} variants={titleVariants}>
             <Box className='icon' as='svg' width="112.048" height="75.25" viewBox="0 0 112.048 75.25">
               <defs>
