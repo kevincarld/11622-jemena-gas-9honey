@@ -23,7 +23,7 @@ export default function Intro() {
       </Box>
 
       <Figure my={{base: '41px'}}>
-        <Img dimension='1074x511' mock='intro-1' alt='fireplace' />
+        <Img dimension='1074x511' mock='intro-1' src='./images/intro-1.jpg' alt='fireplace' />
       </Figure>
 
       <Grid px={{base: '30px', d:0}} templateColumns={{lg: '1fr 1fr'}} gap={{lg: '56px'}}>
