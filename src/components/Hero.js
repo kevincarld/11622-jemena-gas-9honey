@@ -64,7 +64,7 @@ export default function Hero() {
             <Parallax translateY={[0, 100]} shouldAlwaysCompleteAnimation='true'>
               <PreLine as='h1' {...texts.title} w='full' px={{base: '30px', d: '80px'}} pb={{base:'60px', d: '100px', wide: '150px'}}>
                 {`Make your
-                dream homes
+                dream home
                 even dreamier`}
               </PreLine>
             </Parallax>
