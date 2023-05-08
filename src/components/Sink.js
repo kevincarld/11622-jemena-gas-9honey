@@ -17,10 +17,11 @@ export default function Sink() {
           <GridItem>
             <Grid templateColumns={{base:"1fr 1fr", d: '1fr'}} gap={{base: '9px'}}>
               <Figure>
-                <Img dimension='183x190' w='full' mock='sink-1' />
+                <Img display={{d: 'none'}} dimension='183x190' w='full' src='./images/sink-1-sm.jpg' mock='sink-1' />
+                <Img display={{base: 'none', d: 'block'}} dimension='522x385' w='full' src='./images/sink-1.jpg' mock='sink-1' />
               </Figure>
               <Figure display={{d: 'none'}}>
-                <Img dimension='183x190' w='full' mock='sink-2' />
+                <Img dimension='183x190' w='full' src='./images/sink-2-sm.jpg' mock='sink-2' />
               </Figure>
             </Grid>
 
@@ -39,13 +40,13 @@ export default function Sink() {
           </GridItem>
 
           <GridItem display={{base: 'none', d:'block'}}>
-            <Img dimension='576x941' mock='sink' fit='cover' w='full' h='full' />
+            <Img dimension='576x941' mock='sink' fit='cover' src='./images/sink-2.jpg' w='full' h='full' />
           </GridItem>
         </Grid>
       </Container>
 
       <Figure px={{base: '35px', d: 0}}>
-        <Img dimension='1195x706' mock='sink-feet' w='full' alt='feet crossed with fireplace in the background' />
+        <Img dimension='1195x706' mock='sink-feet' src='./images/sink-3.jpg' w='full' alt='feet crossed with fireplace in the background' />
       </Figure>
     </Container>
   )
