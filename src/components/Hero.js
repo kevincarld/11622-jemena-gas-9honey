@@ -17,28 +17,38 @@ export default function Hero() {
     <Box pos='relative' overflow='hidden' color='white'>
       <FeatureHeader href='#' />
 
-      <Box h='630px' display={{base: 'block', lg: 'none'}}>
-        <Img dimension='375x627' mock='bg'  w='full' fit='cover' />
+      <Box h={{base: '630px', sm: 'auto'}} display={{base: 'block', lg: 'none'}}>
+        <Img dimension='375x627' mock='bg' src='./images/hero-sm.jpg' h='full' w='full' fit='cover' />
         <Box pos='absolute' bottom='0' left='0' right='0' display='flex' flexDir={'column'} alignItems={'center'}>
-          <PreLine as='h1' {...texts.title} px='30px' pb='60px'>
+          <PreLine as='h1' {...texts.title} px='30px' pb='60px' sx={{
+            '@media(min-width: 400px)': {
+              pb: '30%'
+            },
+            '@media(min-width: 515px)': {
+              pb: '50%'
+            },
+            '@media(min-width: 768px)': {
+              pb: '70%'
+            },
+          }}>
             {`Make
               your dream
               home even
               dreamier`}
           </PreLine>
 
-          <Img dimension='375x209' mock='front' mx='auto' zIndex='2' pos='relative' />
+          <Img dimension='375x209' mock='front' src='./images/hero-obj-sm.png' fit='contain' zIndex='2' pos='relative' />
         </Box>
       </Box>
 
-      <Box  display={{base: 'none', lg: 'block'}}>
-        <Img dimension='1920x856' mock='bg' minH={{base: '700px'}}  w='full' h='full' fit='cover' />
+      <Box display={{base: 'none', lg: 'block'}}>
+        <Img dimension='1920x856' mock='bg' src='./images/hero.jpg' minH={{base: '700px'}}  w='full' h='full' fit='cover' />
 
         <Box pos='absolute' inset='0 0 0 0' display='flex' alignItems='center'>
           <Container w='full'>
-            <PreLine as='h1' {...texts.title} w='full' px={{base: '30px', d: '80px'}} pb='60px'>
+            <PreLine as='h1' {...texts.title} w='full' px={{base: '30px', d: '80px'}} pb={{base:'60px', d: '100px', wide: '150px'}}>
               {`Make your
-              dream home
+              dream homes
               even dreamier`}
             </PreLine>
           </Container>
@@ -46,7 +56,7 @@ export default function Hero() {
 
         <Box pos='absolute' inset='auto 0 0 0'>
           <Container w='full'>
-            <Img dimension='1061x394' mock='front'  zIndex='2' pos='relative' ml={{ wide: '-200px'}} />
+            <Img maxW={{base:"65%", wide: 'none'}} dimension='1061x394' mock='front' src='./images/hero-obj.png'  zIndex='2' pos='relative' ml={{ wide: '-200px'}} />
           </Container>
         </Box>
 
@@ -62,8 +72,8 @@ export default function Hero() {
 const texts = {
   title: {
     fontWeight: 'bold',
-    fontSize: {base: '40px', sm: '51px'},
-    lineHeight: {base: '46px', sm: '56px'},
+    fontSize: {base: '40px', sm: '51px', wide: '85px'},
+    lineHeight: {base: '46px', sm: '56px', wide: '92px'},
   }
 }
 
