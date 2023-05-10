@@ -147,7 +147,6 @@ export default function App({ Component, pageProps }) {
         } */}
 
 
-      {/* UNCOMMENT FOR: nine.com.au ga scripts
        {!isDev &&
         <>
           <Script id="nineKit2" async>
@@ -191,13 +190,12 @@ export default function App({ Component, pageProps }) {
           </Script>
         </>
       }
-    */}
+
 
       <MastheadProvider>
         <Component {...pageProps} />
       </MastheadProvider>
 
-      {/* UNCOMMENT FOR: GA4 scripts
       {!isDev &&
 
         <>
@@ -213,7 +211,7 @@ export default function App({ Component, pageProps }) {
           </Script>
         </>
       }
-      */}
+
     </React.Fragment>
   );
 }
